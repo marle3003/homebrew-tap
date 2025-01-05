@@ -10,7 +10,7 @@ class Mokapi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/marle3003/mokapi/releases/download/v0.11.0/mokapi_v0.11.0_darwin_amd64.tar.gz"
-      sha256 "9df9da699f7df33dd2e43930c3af004fa5a37d32d96f82de9e45eef20c60b23f"
+      sha256 "54e7b9463acdd1218fd412485dad1bc9f16b49e0fecf7c30f7e721f445651b3f"
 
       def install
         bin.install "mokapi"
@@ -18,7 +18,7 @@ class Mokapi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/marle3003/mokapi/releases/download/v0.11.0/mokapi_v0.11.0_darwin_arm64.tar.gz"
-      sha256 "adcbf0f22d95a58e0c19d54c286f5de5502ddb180c8b010ee1721b435c6c3ce1"
+      sha256 "43c96471d24b030e82ff85c7e56cef61f98094604ae265430fb2686306812444"
 
       def install
         bin.install "mokapi"
@@ -30,7 +30,7 @@ class Mokapi < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/marle3003/mokapi/releases/download/v0.11.0/mokapi_v0.11.0_linux_amd64.tar.gz"
-        sha256 "9ef621870cdc6851560584e9e20e899133d4097114bdd8db4732523036f0af76"
+        sha256 "1bdef2f076e5b50f648f25ddd1a12ed93b24a7a71c4f7a9807361f640981bb33"
 
         def install
           bin.install "mokapi"
@@ -40,7 +40,7 @@ class Mokapi < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/marle3003/mokapi/releases/download/v0.11.0/mokapi_v0.11.0_linux_arm64.tar.gz"
-        sha256 "fd931e7c517a32479b96ae9b6a9483d24322b7d790f46a419e91133778f308b2"
+        sha256 "2d16abc98824de1e1db858e90fe2cd5d859d6c5aea6c2355d7af79db7e7f91dd"
 
         def install
           bin.install "mokapi"
