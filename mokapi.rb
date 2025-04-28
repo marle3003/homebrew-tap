@@ -5,20 +5,20 @@
 class Mokapi < Formula
   desc "Your API Mocking Tool for Agile Development using Go and Javascript - https://mokapi.io"
   homepage "https://mokapi.io"
-  version "0.14.8"
+  version "0.15.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marle3003/mokapi/releases/download/v0.14.8/mokapi_v0.14.8_darwin_amd64.tar.gz"
-      sha256 "3f1dce26f035b87fd99985edb1f6ff7cfc3a2d894a9ab3faa4bba8ac17c8f9a0"
+      url "https://github.com/marle3003/mokapi/releases/download/v0.15.0/mokapi_v0.15.0_darwin_amd64.tar.gz"
+      sha256 "94e8e139bc7f7bf74d3220bc0fb894187fb959dc1de27a4b7a9914f6bca4d6b0"
 
       def install
         bin.install "mokapi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marle3003/mokapi/releases/download/v0.14.8/mokapi_v0.14.8_darwin_arm64.tar.gz"
-      sha256 "6e5e8ee0847f35142a969d78943cebec281a2e1784bcbd240802a74e92901f88"
+      url "https://github.com/marle3003/mokapi/releases/download/v0.15.0/mokapi_v0.15.0_darwin_arm64.tar.gz"
+      sha256 "2003c3ebedacdbedd4aa0a72ca322919edab60be85e5c76f6e3886bc139e5994"
 
       def install
         bin.install "mokapi"
@@ -29,8 +29,8 @@ class Mokapi < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marle3003/mokapi/releases/download/v0.14.8/mokapi_v0.14.8_linux_amd64.tar.gz"
-        sha256 "4c8bb2cc1e75821e640f876f97ca9b12c2776a413d3560aaedfe756eab1e931c"
+        url "https://github.com/marle3003/mokapi/releases/download/v0.15.0/mokapi_v0.15.0_linux_amd64.tar.gz"
+        sha256 "736b34555fe0027ebe4f522db7d42d7794b43481ec21a53cdb84f403bbe6899a"
 
         def install
           bin.install "mokapi"
@@ -39,8 +39,8 @@ class Mokapi < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marle3003/mokapi/releases/download/v0.14.8/mokapi_v0.14.8_linux_arm64.tar.gz"
-        sha256 "8b4dfd17bae302ee3b4baa5f1227e65c7dcec1639667414ba372f61dc9d5008b"
+        url "https://github.com/marle3003/mokapi/releases/download/v0.15.0/mokapi_v0.15.0_linux_arm64.tar.gz"
+        sha256 "b631a72896742372b5871d15ce145bc644ed02c023bd76f93540b0ef293a1f09"
 
         def install
           bin.install "mokapi"
